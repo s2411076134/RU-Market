@@ -14,6 +14,7 @@ export default {
     },
     extend: {
       colors: {
+        'image-blue': '#213c8f',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

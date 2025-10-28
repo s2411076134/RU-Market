@@ -28,7 +28,10 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <nav
+      className="sticky top-0 z-50 w-full border-b"
+      style={{ backgroundColor: "#093e66" }}
+    >
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center">
           <img src={logo} alt="RU Market" className="h-10 sm:h-12 w-auto" />
@@ -36,7 +39,7 @@ export const Navbar = () => {
 
         <div className="flex items-center gap-4">
           <Link to="/marketplace">
-            <Button variant="ghost" className="gap-2">
+            <Button variant="ghost" className="gap-2 text-white">
               <ShoppingBag className="h-4 w-4" />
               Marketplace
             </Button>
@@ -51,7 +54,7 @@ export const Navbar = () => {
                 </Button>
               </Link>
               <Link to="/profile">
-                <Button variant="ghost" size="icon">
+                <Button variant="ghost" size="icon" className="text-white">
                   <User className="h-4 w-4" />
                 </Button>
               </Link>
